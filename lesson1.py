@@ -1,16 +1,25 @@
-from tkinter.font import names
-
-
 class Hero:
-    def __init__(self, name,hp,lvl) :
-        self.name_hero = name
-        self.hp_hero = hp
-        self.lvl_hero = lvl
-    def action(self):
-        return f"{self.name_hero}hero base action!"
+    def __init__(self, name, hp, lvl, strength):
+        self.name = name
+        self.hp = hp
+        self.lvl = lvl
+        self.strength = strength
+    def greet(self):
+        print(f"Привет, я {self.name}, мой уровень {self.lvl}")
+    def attack(self):
+        print(f"{self.name} наносит удар!")
+        self.strength -= 1
+    def rest(self):
+        print(f"{self.name} отдыхает…")
+        self.hp += 1
 
-kirito = Hero("Кирито", 100, 5)
-
-print(kirito)
-print(kirito.name_hero)
-print(kirito.action())
+kirito = Hero("Кирито", 100, 5, 100)
+asuna = Hero("Асуна", 100, 4, 95)
+kirito.greet()
+print(f"сила до атаки: {kirito.strength}")
+kirito.attack()
+print(f"сила после атаки: {kirito.strength}")
+asuna.greet()
+print(f"HP до: {asuna.hp}")
+asuna.rest()
+print(f"HP после: {asuna.hp}")
