@@ -34,7 +34,7 @@ class Assasin(Hero):
     def attack(self):
         print("Ассасин атакует исподтишка!")
 
-user_choice = input("Выберите своего героя (Warrior, Mage, Assasin): ")
+user_choice = input("Выберите героя (Классы: Warrior, Mage, Assasin): ").capitalize()
 if user_choice == "Warrior":
     player = Warrior("Арагорн", 1, 100, 15, 50)
 elif user_choice == "Mage":
@@ -45,15 +45,15 @@ else:
     player = None
 
 if player:
-    enemy_num = random.randint(1, 3)
-    if enemy_num == 1:
-        enemy = Warrior("Враг-Воин", 1, 100, 15, 50)
+    enemy_choice = random.randint(1, 3)
+    if enemy_choice == 1:
+        enemy = Warrior("Вражеский-Воин", 1, 100, 15, 50)
         enemy_type = "Warrior"
-    elif enemy_num == 2:
-        enemy = Mage("Враг-Маг", 1, 80, 10, 100)
+    elif enemy_choice== 2:
+        enemy = Mage("Вражеский-Маг", 1, 80, 10, 100)
         enemy_type = "Mage"
     else:
-        enemy = Assasin("Враг-Ассасин", 1, 90, 12, 40)
+        enemy = Assasin("Вражеский-Ассасин", 1, 90, 12, 40)
         enemy_type = "Assasin"
 
     print(f"\nвы: {user_choice} vs соперник: {enemy_type}")
