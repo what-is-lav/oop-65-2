@@ -1,7 +1,7 @@
 import random
 
 class Hero:
-    def __init__(self, name, lvl, hp, strength): # Поменял местами для логики: имя, уровень, хп, сила
+    def __init__(self, name, lvl, hp, strength):
         self.name = name
         self.lvl = lvl
         self.hp = hp
@@ -13,7 +13,7 @@ class Hero:
 
 class Warrior(Hero):
     def __init__(self, name, lvl, hp, strength, stamina):
-        super().__init__(name, lvl, hp, strength) # Теперь порядок совпадает с Hero
+        super().__init__(name, lvl, hp, strength)
         self.stamina = stamina
     def attack(self):
         print("Воин атакует мечом!")
