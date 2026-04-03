@@ -17,6 +17,7 @@ class MageHero(Hero):
     def action(self):
         print(f' Hi i {self.name} this my action')
 
+
 asuna = MageHero("asuna",97,80 , 999)
 
 # print(kirito.action())
@@ -30,25 +31,30 @@ class Swim:
     def action(self):
         print("Swim")
 
+
 class Animal(Swim,Fly):
     pass
 
 duck = Animal()
 # duck.action()
 
+
 class A:
     def action(self):
         print(A)
+
 
 class B(A):
     def action(self):
         super().action()
         print(B)
 
+
 class C(B):
     def action(self):
         super().action()
         print(C)
+
 
 class D(B,C):
     def action(self):
