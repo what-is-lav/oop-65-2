@@ -88,4 +88,8 @@ print("Mage1 == Warrior ?", acc1 == acc3)
 sms = KGSms()
 print(sms.send_otp("+996706311290"))
 # ru_sms = RUSms()
+<<<<<<< HEAD
 # print(ru_sms.send_otp("+79991234567"))
+=======
+# print(ru_sms.send_otp("+79991234567"))
+>>>>>>> fb8a3fce1c831fbc355a79498b4c25aa0e743304
