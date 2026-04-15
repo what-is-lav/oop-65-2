@@ -5,5 +5,5 @@
 # pip - пакетный менеджер пайтон. команда install позволяет скачать библиотеки, фреймворки и другие модули
 # pip freeze и pip list позволяют посмотреть что установлено в виртуалке
 # виртуалка venv - это директория которая хранить в себе python и установленные модули (библиотеки, фреймворки)
-# pip install virtualvenv | python venv -m my_venv | venv\Scripts\activate
+# pip install virtualenv | python venv -m my_venv | venv\Scripts\activate
 
